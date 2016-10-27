@@ -1,7 +1,5 @@
 FROM mhart/alpine-node:6.9.1
 
-RUN apk add --no-cache \
-	build-base \
- && rm -rf /var/cache/apk/*
+RUN apk add --no-cache build-base
 
 RUN npm install eslint
