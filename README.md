@@ -1,8 +1,9 @@
 # build-tools
 
-Docker build tool containers.  
+Pre-canned Docker build tool containers for our CI/CD pipeline.  
 
 ## commonplace/node-builder
 
-This is alpine linux distro with the node build tools needed to run CI/CD tests.  Contains node, npm and standard unix build tools (make, etc)
-
+This is alpine linux based distro with:
+* Node and npm
+* make
