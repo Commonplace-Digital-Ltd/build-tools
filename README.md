@@ -1,6 +1,6 @@
 # build-tools
 
-Docker build tool containers
+Docker build tool containers.  
 
 ## commonplace/node-builder
 
