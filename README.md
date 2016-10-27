@@ -9,7 +9,3 @@ Run `make push` to build and push updates to Docker hub.  You need to be logged 
 This is alpine linux based distro with:
 * Node and npm
 * make
-
-
-## Notes
-
