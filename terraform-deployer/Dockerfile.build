@@ -2,6 +2,8 @@ FROM mhart/alpine-node:6.9.1
 
 ENV TERRAFORM_VERSION=0.8.1
 
+RUN apk add --no-cache build-base zip
+
 RUN apk add --update wget ca-certificates unzip git bash && \
     wget -q -O /terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" && \
     unzip /terraform.zip -d /bin && \
