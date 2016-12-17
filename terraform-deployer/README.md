@@ -1,8 +1,6 @@
-# commonplace/node-builder
+# terraform-deployer
 
-This is alpine linux based distro with:
-* Node and npm
-* make
+This is alpine linux based distro with terraform
 
 ## Deploy to Docker Hub  
 
