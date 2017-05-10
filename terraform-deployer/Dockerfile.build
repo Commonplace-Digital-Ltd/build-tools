@@ -2,10 +2,24 @@ FROM mhart/alpine-node:6.9.1
 
 ENV TERRAFORM_VERSION=0.9.4
 
-RUN apk add --no-cache build-base zip openntpd openssh
+ENV PACKAGES="\
+  build-base \
+  zip  \
+  openntpd \
+  openssh \
+  python3  \
+  py-pip  \
+  wget \
+  ca-certificates \
+  unzip \
+  git \
+  bash \
+"
 
-RUN apk add --update wget ca-certificates unzip git bash && \
+RUN apk add --update ${PACKAGES} && \
     wget -q -O /terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" && \
     unzip /terraform.zip -d /bin && \
     apk del --purge wget ca-certificates unzip && \
-    rm -rf /var/cache/apk/* /terraform.zip
+    rm -rf /var/cache/apk/* /terraform.zip && \
+    pip install --upgrade pip && \
+    pip install boto3
