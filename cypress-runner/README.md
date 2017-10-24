@@ -1,7 +1,7 @@
 # commonplace/cypress-runner
 
 This is the official Cypress test runner with:
-* Node and npm
+* Node 6
 * make
 
 ## Deploy to Docker Hub  
