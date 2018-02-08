@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:6.9.1
 
-ENV TERRAFORM_VERSION=0.9.4
+ENV TERRAFORM_VERSION=0.11.3
 
 ENV PACKAGES="\
   build-base \
