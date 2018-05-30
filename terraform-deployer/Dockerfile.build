@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:6.9.1
+FROM mhart/alpine-node:8.11.2
 
 ENV TERRAFORM_VERSION=0.11.3
 

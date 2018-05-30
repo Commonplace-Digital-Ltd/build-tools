@@ -1,5 +1,5 @@
-FROM mhart/alpine-node:6.9.1
+FROM mhart/alpine-node:8.11.2
 
 RUN apk add --no-cache build-base
 
-RUN npm install eslint
+RUN yarn add eslint
