@@ -1,6 +1,6 @@
-FROM docker:17.03.1-ce
+FROM docker:18.03.1-ce-dind
 
-ENV DOCKERCOMPOSE_VERSION=1.14.0
+ENV DOCKERCOMPOSE_VERSION=1.21.2
 
 RUN apk add --update python3 && \
     python3 -m ensurepip --upgrade && \
