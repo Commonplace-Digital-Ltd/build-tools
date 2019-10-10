@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:8.16.1
 
-RUN apk add --no-cache build-base tzdata
+RUN apk add --no-cache build-base tzdata git
 RUN ls /usr/share/zoneinfo
 
 RUN cp /usr/share/zoneinfo/Europe/London /etc/localtime
